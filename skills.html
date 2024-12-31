@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="/images/nusrathmemoji.png" alt="Nusrath Syed" id="home-img">
+        </div>
+        <h1>Welcome</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div id="nav-links" class="hidden">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Backend Development:</strong> Node.js, Express.js</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Databases:</strong> MongoDB, MySQL</li>
+                <li><strong>Frameworks & Libraries:</strong> React, Bootstrap</li>
+                <li><strong>Tools:</strong> VS Code, Postman, Jira</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nusrath Syed. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-links');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

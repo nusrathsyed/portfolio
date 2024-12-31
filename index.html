@@ -3,64 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nusrath Syed</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-left">
+            <img src="images/nusrathmemoji.png" alt="Nusrath Syed" id="home-img">
+        </div>
+        <div class="header-right">
+            <h1>Nusrath Syed</h1>
+            <h2>Software Engineer</h2>
+            <p>I build software and solve problems.</p>
+        </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <img src="/images/nusrathmemoji.png" alt="Nusrath Syed" style="width: 150px; border-radius: 50%; margin: 20px 0;">
-            <p>Hi, I'm Nusrath Syed. Aspiring Software Developer.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects and skills.</p>
-                <a href="https://github.com/nusrathsyed/portfolio">View Code</a>
+            <div class="content-container">
+                <p>Hi there! I'm a software developer who graduated from Sheridan College and York University, and I'm all about tech—whether it's reviewing the latest gadgets, competing in hackathons, or diving deep into all things tech. When I'm not coding up a storm, you'll probably find me experimenting in the kitchen, creating art, or just enjoying the endless possibilities of the tech world. Let's just say, if it involves creativity, problem-solving, or a good snack, I'm in!</p>
             </div>
-            <div class="project">
-                <h3>Task Manager</h3>
-                <p>A web-based task management application using JavaScript and local storage for task persistence. It helps users manage daily tasks effectively.</p>
-                <a href="https://github.com/nusrathsyed/task-manager">View Code</a>
-            </div>
-            <div class="project">
-                <h3>Weather App</h3>
-                <p>An app that allows users to check the weather forecast by interacting with a third-party API (OpenWeather). Built using JavaScript and HTML/CSS.</p>
-                <a href="https://github.com/nusrathsyed/weather-app">View Code</a>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Backend Development:</strong> Node.js, Express.js</li>
-                <li><strong>Version Control:</strong> Git, GitHub</li>
-                <li><strong>Databases:</strong> MongoDB, MySQL</li>
-                <li><strong>Frameworks & Libraries:</strong> React, Bootstrap</li>
-                <li><strong>Tools:</strong> VS Code, Postman, Jira</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>If you'd like to work together or have any questions, feel free to reach out to me!</p>
-            <p>Email: <a href="mailto:nusrathsyedkazi@gmail.com">nusrathsyedkazi@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/nusrathsyed" target="_blank">github.com/nusrathsyed</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/nusrath-syed" target="_blank">linkedin.com/in/nusrath-syed</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Nusrath Syed. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/nusrathsyed" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/nusrath-syed" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nusrathsyedkazi@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>                
+        </div>
     </footer>
+    <script src="script.js"></script> <!-- Reference to the external script.js -->
 </body>
 </html>
