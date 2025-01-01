@@ -1,19 +1,8 @@
-/* Root variables for hover effect */
+/* Root variables for hover effect 
 :root {
     --mouse-x: 0px;
     --mouse-y: 0px;
-}
-
-/* General body styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #333;
-    color: white;
-    position: relative;
-}
+} */
 
 body::after {
     content: "";
@@ -34,6 +23,17 @@ body::after {
     transform: translate(-50%, -50%);
     transition: transform 0.1s, opacity 0.1s; /* Smooth transition */
     z-index: 9999;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #333;
+    color: white;
+    position: relative;
 }
 
 /* Header styles */
