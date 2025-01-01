@@ -1,23 +1,11 @@
+body::after {
+    z-index: 9999;
+}
+
 /* Root variables for hover effect */
 :root {
     --mouse-x: 0px;
     --mouse-y: 0px;
-}
-
-/* Circle effect on hover */
-body::after {
-    content: "";
-    position: absolute;
-    left: var(--mouse-x);
-    top: var(--mouse-y);
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, opacity 0.2s;
 }
 
 /* General body styles */
@@ -31,14 +19,13 @@ body {
     position: relative;
 }
 
-/* Circle following the mouse pointer */
 body::after {
     content: "";
     position: absolute;
     left: var(--mouse-x);
     top: var(--mouse-y);
     width: 50vw; /* Large enough to cover half the screen */
-    height: 50vw; /* Matching the width for a perfect circle */
+    height: 50vw;
     background: radial-gradient(
         circle,
         rgba(255, 255, 255, 0.1) 30%, /* Center lighter */
