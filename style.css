@@ -1,7 +1,3 @@
-body::after {
-    z-index: 9999;
-}
-
 /* Root variables for hover effect */
 :root {
     --mouse-x: 0px;
@@ -37,6 +33,7 @@ body::after {
     opacity: 1;
     transform: translate(-50%, -50%);
     transition: transform 0.1s, opacity 0.1s; /* Smooth transition */
+    z-index: 9999;
 }
 
 /* Header styles */
