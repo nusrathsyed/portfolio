@@ -15,3 +15,16 @@ document.addEventListener('mousemove', (e) => {
     style.setProperty('--mouse-x', `${x}px`);
     style.setProperty('--mouse-y', `${y}px`);
 });
+
+// Function to handle the 'View Code' link click event
+const codeLinks = document.querySelectorAll('a');
+
+codeLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove the 'clicked' class from all links
+        codeLinks.forEach(l => l.classList.remove('clicked'));
+
+        // Add the 'clicked' class to the clicked link
+        this.classList.add('clicked');
+    });
+});

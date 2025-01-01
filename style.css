@@ -157,6 +157,24 @@ footer {
     color: #00bcd4;
 }
 
+
+/* General Reset for Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Change the color of the clicked link */
+a.clicked {
+    color: white;
+    font-weight: bold;
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     header {
