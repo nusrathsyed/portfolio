@@ -40,7 +40,7 @@ body {
 header {
     display: flex;
     flex-direction: column; /* Adjust for smaller screens */
-    align-items: center;
+    align-items: left;
     text-align: center;
     padding: 20px;
     background-color: #333;
