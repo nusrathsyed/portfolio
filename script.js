@@ -5,15 +5,10 @@ function toggleMenu() {
 }
 
 // mouse hovering 
-document.addEventListener('mousemove', (e) => {
-    const circle = document.querySelector('body::after'); // Target the pseudo-element
-    const x = e.clientX;
-    const y = e.clientY;
-
-    // Adjust position of the circle to follow the mouse
-    const style = document.documentElement.style;
-    style.setProperty('--mouse-x', `${x}px`);
-    style.setProperty('--mouse-y', `${y}px`);
+document.addEventListener("mousemove", (e) => {
+    // Use pageX and pageY to account for scrolling
+    document.documentElement.style.setProperty("--mouse-x", `${e.pageX}px`);
+    document.documentElement.style.setProperty("--mouse-y", `${e.pageY}px`);
 });
 
 // Function to handle the 'View Code' link click event
