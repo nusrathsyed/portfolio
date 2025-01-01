@@ -4,11 +4,23 @@ function toggleMenu() {
     navLinks.classList.toggle('hidden');  // This will toggle the visibility of the navigation links
 }
 
-// mouse hovering 
-document.addEventListener("mousemove", (e) => {
-    // Use pageX and pageY to account for scrolling
-    document.documentElement.style.setProperty("--mouse-x", `${e.pageX}px`);
-    document.documentElement.style.setProperty("--mouse-y", `${e.pageY}px`);
+// Track mouse position relative to the entire document
+document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    // Update CSS variables with the mouse position
+    document.documentElement.style.setProperty('--mouse-x', `${mouseX}px`);
+    document.documentElement.style.setProperty('--mouse-y', `${mouseY}px`);
+});
+
+// Ensure the effect stays at the right position when the page scrolls
+document.addEventListener('scroll', () => {
+    const mouseX = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--mouse-x'));
+    const mouseY = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--mouse-y'));
+
+    document.documentElement.style.setProperty('--mouse-x', `${mouseX}px`);
+    document.documentElement.style.setProperty('--mouse-y', `${mouseY}px`);
 });
 
 // Function to handle the 'View Code' link click event
