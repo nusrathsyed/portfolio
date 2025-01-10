@@ -35,3 +35,15 @@ codeLinks.forEach(link => {
         this.classList.add('clicked');
     });
 });
+
+// Add a 'clicked' class to social icons on click
+document.querySelectorAll('.social-icon').forEach((icon) => {
+    icon.addEventListener('click', () => {
+        icon.classList.add('clicked');
+    });
+});
+
+function toggleMenu() {
+    const menu = document.getElementById('nav-links');
+    menu.classList.toggle('hidden');
+}

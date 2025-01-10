@@ -1,4 +1,4 @@
-/* Root variables for hover effect */
+* Root variables for hover effect */
 :root {
     --mouse-x: 0px;
     --mouse-y: 0px;
@@ -47,6 +47,11 @@ body {
     padding: 20px;
 }
 
+main {
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+}
 
 .container {
     flex: 1;
